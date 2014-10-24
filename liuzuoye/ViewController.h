@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *mUserTypeSegement;
+@property (weak, nonatomic) IBOutlet UITextField *mUserNameTF;
+@property (weak, nonatomic) IBOutlet UITextField *mPasswordTF;
+- (IBAction)pressLogin:(id)sender;
 
 @end
 

@@ -1,25 +1,99 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6162" systemVersion="14A238h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6160"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EqI-m2-0Df">
+                                <rect key="frame" x="264" y="232" width="135" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAS-w7-74D">
+                                <rect key="frame" x="202" y="241" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6h-90-oPg">
+                                <rect key="frame" x="277" y="319" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="gwt-Fn-R4i"/>
+                                </constraints>
+                                <state key="normal" title="登录">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressLogin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QVC-WE-a93"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JEt-Sk-0di">
+                                <rect key="frame" x="264" y="168" width="135" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FT2-qO-W15">
+                                <rect key="frame" x="202" y="82" width="197" height="29"/>
+                                <segments>
+                                    <segment title="教师"/>
+                                    <segment title="家长"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYc-Po-8op">
+                                <rect key="frame" x="202" y="172" width="53" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="B7B-Tw-yVd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="CAS-w7-74D" secondAttribute="centerX" constant="71.5" id="1Ad-el-rjg"/>
+                            <constraint firstAttribute="centerX" secondItem="FT2-qO-W15" secondAttribute="centerX" id="4r9-le-T7j"/>
+                            <constraint firstItem="CYc-Po-8op" firstAttribute="leading" secondItem="CAS-w7-74D" secondAttribute="leading" id="By8-A8-Pty"/>
+                            <constraint firstItem="EqI-m2-0Df" firstAttribute="bottom" secondItem="CAS-w7-74D" secondAttribute="bottom" id="C4M-QL-gi7"/>
+                            <constraint firstItem="JEt-Sk-0di" firstAttribute="top" secondItem="FT2-qO-W15" secondAttribute="bottom" constant="58" id="DgO-I2-96V"/>
+                            <constraint firstItem="f6h-90-oPg" firstAttribute="top" secondItem="EqI-m2-0Df" secondAttribute="bottom" constant="57" id="N1F-pW-wzx"/>
+                            <constraint firstItem="CYc-Po-8op" firstAttribute="top" secondItem="FT2-qO-W15" secondAttribute="bottom" constant="62" id="RFy-cR-nq5"/>
+                            <constraint firstItem="JEt-Sk-0di" firstAttribute="leading" secondItem="CYc-Po-8op" secondAttribute="trailing" constant="9" id="S19-Lo-1bC"/>
+                            <constraint firstAttribute="centerX" secondItem="EqI-m2-0Df" secondAttribute="centerX" constant="-31.5" id="XBw-Nd-tmI"/>
+                            <constraint firstAttribute="centerX" secondItem="f6h-90-oPg" secondAttribute="centerX" id="YAX-e2-3i1"/>
+                            <constraint firstItem="FT2-qO-W15" firstAttribute="leading" secondItem="CYc-Po-8op" secondAttribute="leading" id="Z9R-wY-UgJ"/>
+                            <constraint firstItem="CAS-w7-74D" firstAttribute="top" secondItem="CYc-Po-8op" secondAttribute="bottom" constant="48" id="chm-vL-hGq"/>
+                            <constraint firstItem="JEt-Sk-0di" firstAttribute="leading" secondItem="EqI-m2-0Df" secondAttribute="leading" id="ixc-cg-K4w"/>
+                            <constraint firstItem="FT2-qO-W15" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="62" id="jrz-jf-57s">
+                                <variation key="widthClass=compact" constant="54"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="JEt-Sk-0di" secondAttribute="centerX" constant="-31.5" id="o6T-1h-NpP"/>
+                            <constraint firstItem="EqI-m2-0Df" firstAttribute="top" secondItem="JEt-Sk-0di" secondAttribute="bottom" constant="34" id="oFT-Oe-P1r"/>
+                            <constraint firstAttribute="centerX" secondItem="CYc-Po-8op" secondAttribute="centerX" constant="71.5" id="sbl-3X-LIT"/>
+                            <constraint firstItem="JEt-Sk-0di" firstAttribute="trailing" secondItem="FT2-qO-W15" secondAttribute="trailing" id="zL9-bM-jop"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mPasswordTF" destination="EqI-m2-0Df" id="9nw-87-x0k"/>
+                        <outlet property="mUserNameTF" destination="JEt-Sk-0di" id="Wxi-ED-fKz"/>
+                        <outlet property="mUserTypeSegement" destination="FT2-qO-W15" id="yNS-cT-sga"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="972" y="399"/>
         </scene>
     </scenes>
 </document>
