@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C11DC5B19FB43DF0058AA47 /* SchoolClass.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C11DC5A19FB43DF0058AA47 /* SchoolClass.plist */; };
+		7C11DC5D19FB49D50058AA47 /* CourseList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C11DC5C19FB49D50058AA47 /* CourseList.plist */; };
+		7C11DC6019FBB5D30058AA47 /* VCCourseType.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C11DC5F19FBB5D30058AA47 /* VCCourseType.m */; };
+		7C11DC6319FBB6040058AA47 /* VCCourseLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C11DC6219FBB6040058AA47 /* VCCourseLevel.m */; };
+		7C11DC6619FBB64C0058AA47 /* VCTheCourseWorkList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C11DC6519FBB64C0058AA47 /* VCTheCourseWorkList.m */; };
+		7C11DC6A19FBB7380058AA47 /* UserServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C11DC6919FBB7380058AA47 /* UserServerInfo.m */; };
+		7C11DC6D19FBD56A0058AA47 /* VCClassLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C11DC6C19FBD56A0058AA47 /* VCClassLevel.m */; };
+		7C11DC7019FBD5A40058AA47 /* VCTheClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C11DC6F19FBD5A40058AA47 /* VCTheClasses.m */; };
 		7C1C1FEA19F7E48500C8EAAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1C1FE919F7E48500C8EAAC /* main.m */; };
 		7C1C1FED19F7E48500C8EAAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1C1FEC19F7E48500C8EAAC /* AppDelegate.m */; };
 		7C1C1FF019F7E48500C8EAAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1C1FEF19F7E48500C8EAAC /* ViewController.m */; };
@@ -37,6 +45,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C11DC5A19FB43DF0058AA47 /* SchoolClass.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SchoolClass.plist; sourceTree = "<group>"; };
+		7C11DC5C19FB49D50058AA47 /* CourseList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CourseList.plist; sourceTree = "<group>"; };
+		7C11DC5E19FBB5D30058AA47 /* VCCourseType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCCourseType.h; path = VC/VC_LS/VCCourseType.h; sourceTree = SOURCE_ROOT; };
+		7C11DC5F19FBB5D30058AA47 /* VCCourseType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCCourseType.m; path = VC/VC_LS/VCCourseType.m; sourceTree = SOURCE_ROOT; };
+		7C11DC6119FBB6040058AA47 /* VCCourseLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCCourseLevel.h; path = VC/VC_LS/VCCourseLevel.h; sourceTree = SOURCE_ROOT; };
+		7C11DC6219FBB6040058AA47 /* VCCourseLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCCourseLevel.m; path = VC/VC_LS/VCCourseLevel.m; sourceTree = SOURCE_ROOT; };
+		7C11DC6419FBB64C0058AA47 /* VCTheCourseWorkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCTheCourseWorkList.h; path = VC/VC_LS/VCTheCourseWorkList.h; sourceTree = SOURCE_ROOT; };
+		7C11DC6519FBB64C0058AA47 /* VCTheCourseWorkList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCTheCourseWorkList.m; path = VC/VC_LS/VCTheCourseWorkList.m; sourceTree = SOURCE_ROOT; };
+		7C11DC6819FBB7380058AA47 /* UserServerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserServerInfo.h; path = DataModel/UserServerInfo.h; sourceTree = SOURCE_ROOT; };
+		7C11DC6919FBB7380058AA47 /* UserServerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserServerInfo.m; path = DataModel/UserServerInfo.m; sourceTree = SOURCE_ROOT; };
+		7C11DC6B19FBD56A0058AA47 /* VCClassLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCClassLevel.h; path = VC/VC_LS/VCClassLevel.h; sourceTree = SOURCE_ROOT; };
+		7C11DC6C19FBD56A0058AA47 /* VCClassLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCClassLevel.m; path = VC/VC_LS/VCClassLevel.m; sourceTree = SOURCE_ROOT; };
+		7C11DC6E19FBD5A40058AA47 /* VCTheClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCTheClasses.h; path = VC/VC_LS/VCTheClasses.h; sourceTree = SOURCE_ROOT; };
+		7C11DC6F19FBD5A40058AA47 /* VCTheClasses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VCTheClasses.m; path = VC/VC_LS/VCTheClasses.m; sourceTree = SOURCE_ROOT; };
 		7C1C1FE419F7E48500C8EAAC /* liuzuoye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liuzuoye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C1C1FE819F7E48500C8EAAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C1C1FE919F7E48500C8EAAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,18 +112,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C11DC5119FB41470058AA47 /* VC_LS */ = {
+			isa = PBXGroup;
+			children = (
+				7C11DC5E19FBB5D30058AA47 /* VCCourseType.h */,
+				7C11DC5F19FBB5D30058AA47 /* VCCourseType.m */,
+				7C11DC6119FBB6040058AA47 /* VCCourseLevel.h */,
+				7C11DC6219FBB6040058AA47 /* VCCourseLevel.m */,
+				7C11DC6419FBB64C0058AA47 /* VCTheCourseWorkList.h */,
+				7C11DC6519FBB64C0058AA47 /* VCTheCourseWorkList.m */,
+				7C11DC6B19FBD56A0058AA47 /* VCClassLevel.h */,
+				7C11DC6C19FBD56A0058AA47 /* VCClassLevel.m */,
+				7C11DC6E19FBD5A40058AA47 /* VCTheClasses.h */,
+				7C11DC6F19FBD5A40058AA47 /* VCTheClasses.m */,
+			);
+			name = VC_LS;
+			sourceTree = "<group>";
+		};
+		7C11DC5219FB415A0058AA47 /* VC_JZ */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VC_JZ;
+			sourceTree = "<group>";
+		};
+		7C11DC5319FB41620058AA47 /* VC_Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VC_Common;
+			sourceTree = "<group>";
+		};
+		7C11DC6719FBB6FE0058AA47 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				7C11DC6819FBB7380058AA47 /* UserServerInfo.h */,
+				7C11DC6919FBB7380058AA47 /* UserServerInfo.m */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
 		7C1C1FDB19F7E48500C8EAAC = {
 			isa = PBXGroup;
 			children = (
-				7C1DA9E319FA907A00147BD4 /* libicucore.dylib */,
-				7C1DA9E119FA907100147BD4 /* libz.1.2.5.dylib */,
-				7C1DA9DF19FA906B00147BD4 /* SystemConfiguration.framework */,
-				7C1DA9DD19FA906200147BD4 /* CoreTelephony.framework */,
-				7C1DA9DB19FA905A00147BD4 /* CFNetwork.framework */,
-				7C1DA9D919FA905300147BD4 /* MobileCoreServices.framework */,
-				7C1DA9D719FA904B00147BD4 /* CoreGraphics.framework */,
-				7C1DA9D519FA904400147BD4 /* Security.framework */,
-				7C1DA9D319FA903C00147BD4 /* CoreLocation.framework */,
 				7C1DA9D019FA8FF100147BD4 /* Framework */,
 				7C1DA9CF19FA8FC700147BD4 /* PHP */,
 				7C1C1FE619F7E48500C8EAAC /* liuzuoye */,
@@ -122,6 +175,10 @@
 		7C1C1FE619F7E48500C8EAAC /* liuzuoye */ = {
 			isa = PBXGroup;
 			children = (
+				7C11DC6719FBB6FE0058AA47 /* DataModel */,
+				7C11DC5319FB41620058AA47 /* VC_Common */,
+				7C11DC5219FB415A0058AA47 /* VC_JZ */,
+				7C11DC5119FB41470058AA47 /* VC_LS */,
 				7C1C1FEB19F7E48500C8EAAC /* AppDelegate.h */,
 				7C1C1FEC19F7E48500C8EAAC /* AppDelegate.m */,
 				7C1C1FEE19F7E48500C8EAAC /* ViewController.h */,
@@ -138,6 +195,8 @@
 			children = (
 				7C1C1FE819F7E48500C8EAAC /* Info.plist */,
 				7C1C1FE919F7E48500C8EAAC /* main.m */,
+				7C11DC5A19FB43DF0058AA47 /* SchoolClass.plist */,
+				7C11DC5C19FB49D50058AA47 /* CourseList.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -170,6 +229,15 @@
 		7C1DA9D019FA8FF100147BD4 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				7C1DA9E319FA907A00147BD4 /* libicucore.dylib */,
+				7C1DA9E119FA907100147BD4 /* libz.1.2.5.dylib */,
+				7C1DA9DF19FA906B00147BD4 /* SystemConfiguration.framework */,
+				7C1DA9DD19FA906200147BD4 /* CoreTelephony.framework */,
+				7C1DA9DB19FA905A00147BD4 /* CFNetwork.framework */,
+				7C1DA9D919FA905300147BD4 /* MobileCoreServices.framework */,
+				7C1DA9D719FA904B00147BD4 /* CoreGraphics.framework */,
+				7C1DA9D519FA904400147BD4 /* Security.framework */,
+				7C1DA9D319FA903C00147BD4 /* CoreLocation.framework */,
 				7C1DA9D119FA8FFC00147BD4 /* BmobSDK.framework */,
 			);
 			name = Framework;
@@ -256,7 +324,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C11DC5B19FB43DF0058AA47 /* SchoolClass.plist in Resources */,
 				7C1C1FF319F7E48500C8EAAC /* Main.storyboard in Resources */,
+				7C11DC5D19FB49D50058AA47 /* CourseList.plist in Resources */,
 				7C1C1FF519F7E48500C8EAAC /* Images.xcassets in Resources */,
 				7C62EEE919F9107200655EB1 /* iosANP.php in Resources */,
 			);
@@ -276,8 +346,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C11DC6D19FBD56A0058AA47 /* VCClassLevel.m in Sources */,
 				7C1C1FF019F7E48500C8EAAC /* ViewController.m in Sources */,
+				7C11DC6019FBB5D30058AA47 /* VCCourseType.m in Sources */,
+				7C11DC6A19FBB7380058AA47 /* UserServerInfo.m in Sources */,
+				7C11DC6319FBB6040058AA47 /* VCCourseLevel.m in Sources */,
+				7C11DC7019FBD5A40058AA47 /* VCTheClasses.m in Sources */,
 				7C1C1FED19F7E48500C8EAAC /* AppDelegate.m in Sources */,
+				7C11DC6619FBB64C0058AA47 /* VCTheCourseWorkList.m in Sources */,
 				7C1C1FEA19F7E48500C8EAAC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

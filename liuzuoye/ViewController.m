@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <BmobSDK/Bmob.h>
+#import "VCCourseType.h"
 
 @interface ViewController ()
 
@@ -30,25 +31,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (IBAction)pressLogin:(id)sender
 {
-//    BmobObject *gameScore = [BmobObject objectWithClassName:@"GameScore"];
-//    [gameScore setObject:@"小明" forKey:@"playerName"];
-//    [gameScore setObject:@78 forKey:@"score"];
-//    [gameScore setObject:[NSNumber numberWithBool:YES] forKey:@"cheatMode"];
-//    [gameScore saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error)
-//     {
-//         
-//    }];
+    VCCourseType* vc = [[VCCourseType alloc] init] ;
     
-    BmobQuery   *bquery = [BmobQuery queryWithClassName:@"GameScore"];
-    //查找GameScore表所有数据
-    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-        for (BmobObject *obj in array) {
-            //打印playerName
-            NSLog(@"obj.playerName = %@", [obj objectForKey:@"playerName"]);
-        }
-    }];
+    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:vc] ;
+    
+    nav.navigationBar.translucent = NO ;
+    
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal ;
+    
+    [self presentViewController:nav animated:YES completion:nil] ;
 }
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -64,5 +58,26 @@
     return YES ;
 }
 
+
+-(void) testBmob
+{
+    //    BmobObject *gameScore = [BmobObject objectWithClassName:@"GameScore"];
+    //    [gameScore setObject:@"小明" forKey:@"playerName"];
+    //    [gameScore setObject:@78 forKey:@"score"];
+    //    [gameScore setObject:[NSNumber numberWithBool:YES] forKey:@"cheatMode"];
+    //    [gameScore saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error)
+    //     {
+    //
+    //    }];
+    
+    //    BmobQuery   *bquery = [BmobQuery queryWithClassName:@"GameScore"];
+    //    //查找GameScore表所有数据
+    //    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+    //        for (BmobObject *obj in array) {
+    //            //打印playerName
+    //            NSLog(@"obj.playerName = %@", [obj objectForKey:@"playerName"]);
+    //        }
+    //    }];
+}
 
 @end

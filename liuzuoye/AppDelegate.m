@@ -46,11 +46,18 @@
     
     NSLog(@"st = %@",st);
     
-    // Store the deviceToken in the current installation and save it to Parse.
-//    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-//    [currentInstallation setDeviceTokenFromData:deviceToken];
-//    currentInstallation.channels = @[ @"global" ];
-//    [currentInstallation saveInBackground];
+    
+    BmobInstallation* curInstall = [BmobInstallation currentInstallation] ;
+    
+    [curInstall setDeviceTokenFromData:deviceToken] ;
+    
+    //curInstall.channels = @[ @"global",@"1000" ] ;
+    
+    //[curInstall setObject:[NSNumber numberWithBool:YES] forKey:@"isDeveloper"];
+    
+    [curInstall subsccribeToChannels:@[@"1000"]];
+    
+    [curInstall saveInBackground] ;
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
