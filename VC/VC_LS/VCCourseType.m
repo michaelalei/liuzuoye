@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view.
     //从服务器获取
     //登录成功后根据教师账号类型
-    self.title = @"长宁一小";
+    self.title = @"长宁一小学科";
     
     NSString* path = [[NSBundle mainBundle] pathForResource:@"CourseList" ofType:@"plist"] ;
     
@@ -33,6 +33,18 @@
     _tableView.delegate = self ;
     _tableView.dataSource = self ;
     [self.view addSubview:_tableView] ;
+    
+    
+    self.view.backgroundColor = [UIColor whiteColor] ;
+    UIBarButtonItem* btnBack = [[UIBarButtonItem alloc] initWithTitle:@"重登录" style:UIBarButtonItemStylePlain target:self action:@selector(pressBack)] ;
+    
+    self.navigationItem.leftBarButtonItem = btnBack ;
+    
+}
+
+-(void) pressBack
+{
+    [self dismissViewControllerAnimated:YES completion:nil] ;
 }
 
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView

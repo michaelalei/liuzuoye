@@ -32,6 +32,7 @@
 		7C1DA9E219FA907100147BD4 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1DA9E119FA907100147BD4 /* libz.1.2.5.dylib */; };
 		7C1DA9E419FA907A00147BD4 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1DA9E319FA907A00147BD4 /* libicucore.dylib */; };
 		7C62EEE919F9107200655EB1 /* iosANP.php in Resources */ = {isa = PBXBuildFile; fileRef = 7C62EEE819F9107200655EB1 /* iosANP.php */; };
+		BC30EA4C19FC6ADD00C59522 /* VC_HomeworkList.m in Sources */ = {isa = PBXBuildFile; fileRef = BC30EA4B19FC6ADD00C59522 /* VC_HomeworkList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		7C1DA9E119FA907100147BD4 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		7C1DA9E319FA907A00147BD4 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		7C62EEE819F9107200655EB1 /* iosANP.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; name = iosANP.php; path = liuzuoye/iosANP.php; sourceTree = "<group>"; };
+		BC30EA4A19FC6ADD00C59522 /* VC_HomeworkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC_HomeworkList.h; sourceTree = "<group>"; };
+		BC30EA4B19FC6ADD00C59522 /* VC_HomeworkList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC_HomeworkList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 		7C11DC5219FB415A0058AA47 /* VC_JZ */ = {
 			isa = PBXGroup;
 			children = (
+				BC30EA4A19FC6ADD00C59522 /* VC_HomeworkList.h */,
+				BC30EA4B19FC6ADD00C59522 /* VC_HomeworkList.m */,
 			);
 			name = VC_JZ;
 			sourceTree = "<group>";
@@ -352,6 +357,7 @@
 				7C11DC6A19FBB7380058AA47 /* UserServerInfo.m in Sources */,
 				7C11DC6319FBB6040058AA47 /* VCCourseLevel.m in Sources */,
 				7C11DC7019FBD5A40058AA47 /* VCTheClasses.m in Sources */,
+				BC30EA4C19FC6ADD00C59522 /* VC_HomeworkList.m in Sources */,
 				7C1C1FED19F7E48500C8EAAC /* AppDelegate.m in Sources */,
 				7C11DC6619FBB64C0058AA47 /* VCTheCourseWorkList.m in Sources */,
 				7C1C1FEA19F7E48500C8EAAC /* main.m in Sources */,

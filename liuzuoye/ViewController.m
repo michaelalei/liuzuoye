@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import <BmobSDK/Bmob.h>
 #import "VCCourseType.h"
-
+#import "VC_HomeworkList.h"
 @interface ViewController ()
 
 @end
@@ -34,15 +34,30 @@
 
 - (IBAction)pressLogin:(id)sender
 {
-    VCCourseType* vc = [[VCCourseType alloc] init] ;
-    
-    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:vc] ;
-    
-    nav.navigationBar.translucent = NO ;
-    
-    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal ;
-    
-    [self presentViewController:nav animated:YES completion:nil] ;
+    if (_mUserTypeSegement.selectedSegmentIndex == 0)
+    {
+        VCCourseType* vc = [[VCCourseType alloc] init] ;
+        
+        UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:vc] ;
+        
+        nav.navigationBar.translucent = NO ;
+        
+        vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal ;
+        
+        [self presentViewController:nav animated:YES completion:nil] ;
+    }
+    if (_mUserTypeSegement.selectedSegmentIndex == 1)
+    {
+        VC_HomeworkList* vc = [[VC_HomeworkList alloc] init] ;
+        
+        UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:vc] ;
+        
+        nav.navigationBar.translucent = NO ;
+        
+        vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal ;
+        
+        [self presentViewController:nav animated:YES completion:nil] ;
+    }
 }
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
